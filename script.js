@@ -8,4 +8,4 @@ const quoteText = document.getElementById("quote");
 const authorText = document.getElementById("author");
 const newQuoteBtn = document.getElementById("new-quote");
 
-newQuoteBtn.addEventListener("click", () => { let random = Math.floor(Math.random()* quotes.length); quoteText.textContent = quotes[random].quote; authorText.textContent ='- ${quotes[random].author}';});
+newQuoteBtn.addEventListener("click", () => { let random = Math.floor(Math.random()* quotes.length); quoteText.textContent = quotes[random].quote; authorText.textContent =`- ${quotes[random].author}`;});
